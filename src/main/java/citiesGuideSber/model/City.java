@@ -3,16 +3,26 @@ package citiesGuideSber.model;
 import java.util.Objects;
 
 public class City {
-    // Наименование города
-    private String name;
-    // Регион
-    private String region;
-    // Федеральный округ
-    private String district;
-    // Население
-    private int population;
-    // Дата основания или первое упоминание
-    private String foundation;
+    /**
+     * Наименование города
+     */
+    private final String name;
+    /**
+     * Регион
+     */
+    private final String region;
+    /**
+     * Федеральный округ
+     */
+    private final String district;
+    /**
+     * Население
+     */
+    private final int population;
+    /**
+     * Дата основания или первое упоминание
+     */
+    private final String foundation;
 
     public City(String name, String region, String district, int population, String foundation) {
         Objects.requireNonNull(name, "Name of city must not be null");
